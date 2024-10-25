@@ -6,3 +6,4 @@ commands = ["echo 'Build phase complete'"]
 
 [phases.start]
 commands = ["python model.py"]
+
