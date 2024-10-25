@@ -5,5 +5,5 @@ commands = ["pip install -r requirements.txt"]
 commands = ["echo 'Build phase complete'"]
 
 [phases.start]
-commands = ["python model.py"]
+commands = ["python3 model.py"]
 
