@@ -1,0 +1,8 @@
+[phases.setup]
+commands = ["pip install -r requirements.txt"]
+
+[phases.build]
+commands = ["echo 'Build phase complete'"]
+
+[phases.start]
+commands = ["python model.py"]
