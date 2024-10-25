@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import pandas as pd
 import re
+import os
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import train_test_split
@@ -127,4 +128,5 @@ def chatbot():
     return jsonify({"respuesta": respuesta})
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5002)  # Servidor Flask corriendo en el puerto 5002
+    port = int(os.environ.get("PORT", 5000))  # Usa el puerto de entorno o 5000 por defecto
+    app.run(debug=True, host="0.0.0.0", port=port)
