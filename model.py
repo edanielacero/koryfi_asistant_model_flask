@@ -129,4 +129,4 @@ def chatbot():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))  # Usa el puerto de entorno o 5000 por defecto
-    app.run(debug=True, host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port)
