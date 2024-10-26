@@ -3,4 +3,4 @@ flask-cors
 pandas
 scikit-learn
 nltk
-gunicorn
+gunicorn==20.0.4
